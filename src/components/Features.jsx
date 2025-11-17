@@ -26,11 +26,11 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-neutral-950">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Everything you need to ship content daily</h2>
-          <p className="mt-3 text-slate-600">From idea to publish to insights — Kley streamlines your entire social workflow.</p>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">Everything you need to ship content daily</h2>
+          <p className="mt-3 text-neutral-400">From idea to publish to insights — Kley streamlines your entire social workflow.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -41,13 +41,13 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ delay: i * 0.05 }}
-              className="rounded-xl border border-slate-200 p-6 bg-white/70 backdrop-blur hover:shadow-md transition-shadow"
+              className="rounded-xl border border-white/10 p-6 bg-white/[0.03] backdrop-blur hover:shadow-[0_0_0_1px_rgba(255,255,255,0.1)] transition"
             >
-              <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 via-fuchsia-500 to-rose-500 text-white shadow">
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-sky-400 via-fuchsia-500 to-rose-400 text-white shadow">
                 <f.icon size={18} />
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-slate-900">{f.title}</h3>
-              <p className="mt-1.5 text-sm text-slate-600">{f.desc}</p>
+              <h3 className="mt-4 text-lg font-semibold text-white">{f.title}</h3>
+              <p className="mt-1.5 text-sm text-neutral-400">{f.desc}</p>
             </motion.div>
           ))}
         </div>

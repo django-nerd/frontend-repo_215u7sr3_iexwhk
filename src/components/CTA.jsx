@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section id="cta" className="py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-500 via-fuchsia-500 to-rose-500">
+        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-sky-500/30 via-fuchsia-500/30 to-rose-500/30">
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_10%,white,transparent_40%),radial-gradient(circle_at_80%_50%,white,transparent_35%)]" />
           <div className="relative p-10 sm:p-14 text-center">
             <motion.h3
@@ -20,7 +20,7 @@ export default function CTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="mt-3 text-white/90"
+              className="mt-3 text-neutral-200"
             >
               Join creators and teams who plan, publish, and grow with Kley.
             </motion.p>
@@ -31,8 +31,8 @@ export default function CTA() {
               transition={{ delay: 0.15 }}
               className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3"
             >
-              <input type="email" placeholder="Work email" className="w-full sm:w-80 rounded-md border border-white/40 bg-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50" />
-              <button className="inline-flex items-center rounded-md bg-white px-5 py-3 font-medium text-slate-900 hover:bg-white/90">Get early access</button>
+              <input type="email" placeholder="Work email" className="w-full sm:w-80 rounded-md border border-white/15 bg-white/10 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <button className="inline-flex items-center rounded-md bg-white px-5 py-3 font-medium text-neutral-900 hover:bg-neutral-200">Get early access</button>
             </motion.div>
           </div>
         </div>
